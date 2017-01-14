@@ -1,0 +1,162 @@
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
+
+html{
+   box-sizing: border-box;
+
+}
+body{
+   background-color: #17ffff;
+   font-family: 'Droid Sans', sans-serif;
+}
+.logo{
+   margin-top: 90px;       
+   max-width: 100%;
+}
+.disclaimer{
+   background-color: #d8d8d8;
+   padding: 0;
+}
+.texto{
+
+   font-weight:100;
+   letter-spacing: -3px;
+   font-size: 2.2em;
+   color: #454545
+}
+
+.subtitulo{
+   letter-spacing: -1px;
+   font-size: 1.9em;
+   color: #2f2e2e;
+
+
+
+
+}
+.margin{
+   margin-bottom: 15px;
+}
+.fecha{
+   font-size: 0.8em
+}
+p{
+   text-align: justify;
+   color: #080808
+}
+
+.inline{
+   display: inline-block
+}
+
+.card{
+   padding: 30px;
+   padding-left: 50px;
+   padding-right: 50px;
+   background-color: white;
+   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 3px 5px rgba(0,0,0,0.24);
+   margin-bottom: 20px
+}
+
+img{
+   padding: 0;
+   margin: 0;
+   max-width: 100%
+}
+
+.col-centered{
+   margin: 0 auto;
+}
+
+.navbar-brand{
+   color: white;
+   width: 140px;
+   margin: 0;
+   padding: 5px; 
+   font-size: 0.9em;
+   background-color: rgba(105, 146, 239, 0.9);
+}
+.powered{
+
+}
+
+.navbar-default{
+   background-color: rgba(248,248,248,0);
+   border: 1px dashed gray;
+
+}
+
+.blanco{
+   color: white;
+}
+
+.patrocinio{
+   margin-top: 30px;
+   font-size: 0.8em;
+   color: gray;
+
+}
+.selected{
+   background-color: #ffffff;
+}
+.navbar{
+   background-color: #e7e7e7;
+}  
+footer{
+   color: white;
+   background-color: #848484;
+   padding: 30px;
+   padding-left: 50px;
+   padding-right: 50px;
+   background-color: #5c5c5c;
+   font-size: 0.9em
+
+
+}
+.divError{
+   color: red;
+   font-size: 0.7em
+}
+input[type="submit"]:disabled{
+   background-color: #efefef;
+   color: #bcbaba;
+}
+.noselect {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+ol{
+   text-align: left
+}
+.margin-right{
+   margin-right: 15px;
+
+}
+.no-padding{
+   padding: 0;
+}
+
+#link-mail{
+   color: aliceblue;
+}
+
+@media only screen and (max-width: 500px) {
+   p {
+      font-size: 0.9em;  
+   }
+   .subtitulo{
+      font-size: 1.4em
+   }
+   .card{
+      padding: 40px;
+   }
+   #boton-menu{
+      border-bottom: 2px solid white;
+   }
+   #mc_embed_signup{width:200px;}
+   .powered{max-width: 50%}
+}
+

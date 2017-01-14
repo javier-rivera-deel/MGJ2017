@@ -1,0 +1,260 @@
+<!doctype html>
+<html class="no-js" lang="">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      <title>Maracaibo Game Jam 2017</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <!-- Place favicon.ico in the root directory -->
+
+      <link rel="stylesheet" href="css/normalize.css">
+      <link rel="stylesheet" href="css/main.css">
+      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+      <!--Bootstrap-->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="css/custom.css">
+      <link rel="stylesheet" type="text/css" href="css/responsive.css">   
+      <!-- <link rel="stylesheet" href="css/validatestyle.css"> -->
+      <script src="js/parse-1.6.5.min.js"></script>
+      <script src="js/scripts.js"> </script>
+   </head>
+   <body>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+         <div class="container">
+            <div class="navbar-header page-scroll">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+               </button>
+               <a class="navbar-brand" href="index.html">
+                  <div class="row">
+                     <div class="col-xs-12 text-center blanco">
+                        INICIO
+                     </div>
+                  </div>
+                  <div class="row">
+                     <div class="col-xs-12 ">
+                        <p class="blanco text-center fecha">MGJ del 20 al 22 de Enero</p>
+                     </div>
+                  </div>
+
+               </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse navbar-right">
+               <ul class="nav navbar-nav">
+                  <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                  <li class="hidden">
+                     <a class="page-scroll" href="#"></a>
+                  </li>
+                  <li>
+                     <a id="boton-menu" href="cronograma.html">Cronograma</a>
+                  </li>
+                  <li>
+                     <a id="boton-menu" href="inscripcion.html" class="selected">Inscripciones</a>
+                  </li>
+                  <!--
+                  <li>
+                  <a id="boton-menu" href="ediciones.html">Ediciones Anteriores</a>
+                  </li>
+                  -->
+                  <li>
+                     <a id="boton-menu" href="lista-correos.html">Lista de Correos</a>
+                  </li>
+                  <li>
+                     <a id="boton-menu-final" href="faq.html">FAQ</a>
+                  </li>
+               </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+         </div>
+         <!-- /.container -->
+      </nav>
+
+      <div class="container">
+
+         <!--LOGO-->
+         <div class="row">
+            <div class="col-xs-12 text-center">
+               <a href="http://www.3davenue.net/" target="_blank"> <img class="logo" src="img/globalgamejam.png" alt=""></a>
+
+            </div> 
+            <div class="col-xs-12 text-center margin">
+               <a href=""><img class="powered" src="" alt=""></a>
+            </div>
+         </div>
+
+         <!--MAILING LIST-->
+         <div class="row">
+            <div class="col-xs-12 card text-center">
+               <h1 class="text-center subtitulo">Sigue estos pasos para inscribirte:</h1>
+               <marquee >ATENCIÓN : : : : : : : : : : : Quedan <strong>28</strong> cupos disponibles : : : : : : : : : : : ATENCIÓN : : : : : : : : : : Quedan <strong>28</strong> cupos disponibles : : : : : : : : : : : : ATENCIÓN : : : : : : : : : Quedan <strong>28</strong> cupos disponibles : : : : : : : : : : : </marquee>
+               <ol>
+                  <li>Reserva tu cupo enviando la siguiente información:</li><br>
+                  Introduce tu correo: <input id="email" type="email" required pattern=.*\S.*>
+                  <input class="no-select" id="reservar" type="submit" value="Reserva">
+                  <i id="loading"></i>
+                  <br><br>
+                  <li>A partir de la reserva, tienes 72 horas para realizar un depósito, o transferencia (preferimos esta última opción), de 1.500,00Bs. (destinados a comprar refrigerios para el evento) en alguna de las siguientes cuentas corrientes:
+                  </li><br>
+                  <ul>
+                     <li><strong>Banesco: 01340760647603043491</strong> </li>
+                     <li><strong>Bod: 01160058120005605296</strong></li>
+                     <p>Ambas cuentas a nombre de: Javier Rivera, C.I. 16.494.719</p>
+                  </ul>
+                  <div class="disclaimer text-center">
+                     <small >Pasadas las 72 horas y de no realizar el pago, tu cupo sera liberado y deberas volver a reservar, en caso de que exista disponibilidad. Ante cualquier duda, puedes contactar a la organización al correo arq.javierriver@gmail.com</small>
+                  </div>
+                  <br>
+                  <li>Envia el comprobante de depósito o transferencia al correo arq.javierriver@gmail.com con la siguiente estructura:
+                  </li><br>
+                  <ul>
+                     <li>Asunto: Inscripción Jam + (nombre) + (apellido)
+                     </li>
+                     <li>Cuerpo del mail:</li>
+                     <ul>
+                        <li>Datos de transferencia o depósito, junto a la foto o captura de pantalla del comprobante.</li>
+                        <li>Datos del participante: nombre, apellido, cedula y profesión.</li>
+                     </ul>
+                  </ul><br>
+                  <li>
+                     Espera el correo de confirmación.
+                  </li><br>
+                  <li>
+                     <strong>JAM ON! BITCHES!</strong>
+                     <h6>*Léase <em>Jamón</em></h6>
+                  </li>
+               </ol>
+            </div>
+            <!--
+            <div class="col-xs-12 card text-center">
+            <h1 class="text-center subtitulo">Pronto se abrirán las incripciones.</h1>
+
+            <p>Pendiente! Asegúrate de estar inscrito en nuestra <a href="/lista-correos.html">lista de correos</a> para ser el primero en enterarte</p>
+            </div>
+            -->
+         </div>
+      </div>
+      <footer>
+         <div class="row">
+            <div class="col-md-9">
+               Maracaibo Game Jam 2017. Todos los derechos reservados. Sitio web diseñado por <a id="link-mail" href="http://www.facebook.com/javipisobeto" target="_blank">Javier Rivera</a>
+            </div>
+
+            <div class="col-md-3">
+
+               <div class="inline" id="facebook"></div>
+               <div class="inline"  id="twitter"></div>
+
+            </div>
+
+         </div>
+
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+
+      <!-- Bootstrap Core JavaScript -->
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/plugins.js"></script>
+      <script src="js/main.js"></script>
+      <!--      <script type="text/javascript" src="js/SmoothScroll.js"></script>-->
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                                                                 function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                                e.src='https://www.google-analytics.com/analytics.js';
+                                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+         ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+      </script>
+      <script>
+         var is_mobile = !!navigator.userAgent.match(/iphone|android|blackberry/ig) || false;
+         if(is_mobile)
+         {
+            $("#twitter").html("<a href='https://www.twitter.com/mcbogamejam'><i class='fa fa-twitter fa-2x blanco'></i></a>");
+            //			$("#instagram").html("<a href='instagram://user?username='>INSTAGRAM</a>")
+            $("#facebook").html("<a href='fb://McboGameJam'><i class='fa fa-facebook-square fa-2x blanco'></i></a>");
+            //			$("#periscope").html("<a href='www.periscope.tv'>PERISCOPE/maracaibogamejam</a>");
+            //			$("#snapchat").html("<a href='snapchat://?u=maracaibogamejam'>SNAPCHAT</a>");
+         }
+         else
+         {
+            $("#twitter").html("<a href='https://www.twitter.com/mcbogamejam'><i class='fa fa-twitter fa-2x blanco'></i></a>");
+            //			$("#instagram").html("<a href='https://www.instagram.com/hectorurribarri'>INSTAGRAM</a>")
+            $("#facebook").html("<a href='https://www.facebook.com/McboGameJam/'><i class='fa fa-facebook-square fa-2x blanco'></i></a>");
+            //			$("#periscope").html("<a href='https://www.periscope.tv/'>PERISCOPE/</a>");
+            //			$("#snapchat").html("<a href='https://www.snapchat.com/'>SNAPCHAT/</a>");
+         };
+
+      </script>
+      <script src="js/jquery.js"></script>
+      <!--PARSE.COM-->
+      <script>
+         init();
+         var emailOk = false;
+         $("#reservar").click(function(event){
+            var valMail = $("#email").val();
+            var regex = /[\w-\.]{1,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
+            if (!regex.test($('#email').val().trim())) 
+            {
+               //Se añade un div indicando el error.
+               $("#errorMail").remove();
+               $( "<div id ='errorMail' class='divError'>El formato del correo electronico es incorrecto</div>" ).insertAfter( "#reservar" );
+               emailOk = false;
+            }
+            else
+            {
+               $("#errorMail").remove();
+               emailOk = true;
+
+            }
+            if(emailOk){
+               $("#loading").addClass("fa fa-cog fa-spin fa-1x");
+               var Cupo = Parse.Object.extend("Cupo");
+               var busquedaEmail = new Parse.Query(Cupo);
+               busquedaEmail.equalTo("email", valMail);
+               busquedaEmail.find({
+                  success: function(email)
+                  {
+                     if(email.length > 0){
+                        $("#loading").removeClass("fa fa-cog fa-spin fa-1x");
+                        alert("Ya existe una reserva para el correo: "+valMail);                   
+                        clear("#email");
+                     }
+                     else{
+                        var nuevoCupo = new Cupo();
+                        nuevoCupo.set("email",valMail);
+                        nuevoCupo.save({
+                           success:function(cupo){
+                              $("#loading").removeClass("fa fa-cog fa-spin fa-2x");
+                              alert("Tu cupo ha sido reservado. Tienes 72 horas para realizar el pago.");
+                              clear("#email");
+                           },
+                           error:function(error){
+                              alert("Error. Vuelve a intentarlo.");
+                              clear("#email");
+                           }
+                        });
+                     }
+
+                  },
+                  error:function(error)
+                  {
+
+                  }
+               });
+            }
+         });
+      </script>
+      <!--PARSE.COM-->
+   </body>
+</html>
